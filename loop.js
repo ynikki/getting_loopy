@@ -69,3 +69,19 @@ for(var i=0; i<oopsArray.length; i++){
 		oopsArray[i] = "nope";
 	}
 }
+
+/* isNapTime */
+
+var isNapTime = false;
+var napSchedule = [false,false,true,false,true,true];
+
+function nap(schedule){
+	if(schedule === true || schedule === false){
+		return "ZzZzZzZz";
+	} else {
+		return "Gotta get to work!";
+	}
+} 
+
+console.log(nap(isNapTime,true));
+
