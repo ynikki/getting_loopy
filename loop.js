@@ -14,3 +14,21 @@ function printContent(arr){
 console.log(printContent(presidents));
 
 
+/* THE STRING OF NUMBERS */
+
+var stringOfNumbers = '';
+
+	for(var i = 10; i<=20; i++){
+		stringOfNumbers += i;
+	}
+
+console.log(stringOfNumbers);
+
+function appendToString(numbers){
+	for(var i = 10; i <= 20; i++){
+		stringOfNumbers += i;
+	} 
+	return numbers;
+}
+
+console.log(appendToString(stringOfNumbers));
