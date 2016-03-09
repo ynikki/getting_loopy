@@ -46,5 +46,26 @@ for(var i = 0; i<=100; i ++){
 
 console.log(sum);
 
+/* ACCESSING ONLY THE ODD INDEXES OF AN ARRAY - 'NOT EVEN BRAH' */
+
+var oopsArray = ['turn', ,'down', ,'for', ,'what'];
+
+for(var i = 0; i <oopsArray.length; i++){
+	console.log(oopsArray[i]);
+	if (i % 2 === 1){
+		oopsArray[i] = "nope";
+	}
+}
+
+console.log(oopsArray);
 
 
+/* GOING BACKWARDS */
+
+for(var i=0; i<oopsArray.length; i++){
+	oopsArray.reverse();
+	console.log(oopsArray[i]);
+	if (i % 2 === 1){
+		oopsArray[i] = "nope";
+	}
+}
