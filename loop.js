@@ -76,12 +76,16 @@ var isNapTime = false;
 var napSchedule = [false,false,true,false,true,true];
 
 function nap(schedule){
-	if(schedule === true || schedule === false){
-		return "ZzZzZzZz";
-	} else {
-		return "Gotta get to work!";
+	for(var i =0; i<schedule.length; i++){
+	if(schedule[i] === true){
+		console.log("ZzZzZzZz");
+	} else{
+		console.log("Gotta get to work!");
+		isNapTime = !isNapTime;
+		}
 	}
 } 
 
-console.log(nap(isNapTime,true));
+nap(napSchedule);
+
 
